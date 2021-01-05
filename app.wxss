@@ -1,0 +1,61 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10rpx;
+  box-sizing: border-box;
+}
+
+.borderTopdf{  
+  border-top: #dfdfdf 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.borderTopfff{
+  border-top: #fff 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%
+}
+/* 
+image {
+  width: 80%;
+} */
+view{
+  font-size: 30rpx;
+}
+.fufeiPaiHan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #fff
+}
+.previewPay {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 555;
+  transform: translateY(100%);
+  bottom: 0;
+}
+.gmsmtanchu {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 666;
+  transform: translateY(100%);
+  bottom: 0;
+}
+
+.marginBottom{padding-bottom: 34px; background: #fff}
+.f34{font-size: 34rpx;}
+.f30{font-size: 30rpx;}
+.f25{font-size: 25rpx; color: #999}
+.b{font-weight: bold}
+.marginBottom{padding-bottom: 34px; background: #fff}

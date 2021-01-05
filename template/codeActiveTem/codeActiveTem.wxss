@@ -1,0 +1,43 @@
+.code-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.code-group .left-group{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.left-group .code-view{
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.left-group .status-view{
+  padding-top: 10rpx;
+}
+
+.right-group{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-group image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}
+
+.right-group .nick-view{
+  font-size: 30rpx;
+}

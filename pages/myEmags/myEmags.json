@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "emagrow":"/components/myEmagRow/myEmagRow",
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "我的杂志"
+}

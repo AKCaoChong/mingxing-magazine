@@ -1,0 +1,15 @@
+<template name="shareTemplate">
+  <view class="closePreviewCss" bindtap="closeSharePreview"><image src="/images/close.png" mode="widthFix"></image></view>
+  <view class="previewShareTitle f34">分享</view>
+  <view class="previewShareBtnCss">
+    <view class="fximg1" bindtap="makeShareEmag">
+      <image src="/images/fx1.png" mode="widthFix"></image>
+      <text>生成分享海报</text>
+    </view>
+    <!-- <view class="fximg2" bindtap="shareFriendClick">
+      <image src="/images/fx2.png" mode="widthFix"></image>
+      <button open-type="share" class="sharebtn" style="width:160rpx; height:80rpx;">转发给好友</button>
+    </view> -->
+    <button class='fximg' open-type="share" style="width:240rpx"><image src="/images/fx2.png" mode="widthFix"></image>转发给好友</button>
+  </view>
+</template>

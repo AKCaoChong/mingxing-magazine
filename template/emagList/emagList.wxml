@@ -1,0 +1,10 @@
+<template name="emagListTemplate">
+  <view class="emagListCss">
+    <view class="emagListImage" bindtap="toEmagPreview" data-kanid="{{id}}" data-thumlogo="{{thum_logo}}"><image src="{{thum_logo}}" model="widthFix"></image></view>
+    <text class="emagListTitle">{{title}}</text>
+    <view class="emagListDy">
+      <view class="f25" bindtap="onTypeClick" data-typeid="{{type}}" data-typename="{{typename}}">{{typename}}</view>
+      <view class="f25"><text>{{buynum}}</text>订阅</view>
+    </view>
+  </view>
+</template>

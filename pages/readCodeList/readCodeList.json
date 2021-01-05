@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "segment": "/components/segment/segment",
+    "loadingmore": "/components/loadingmore/loadingmore",
+    "shareConfirm": "/components/shareConfirm/shareConfirm",
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "阅读码",
+  "onReachBottomDistance":300
+}

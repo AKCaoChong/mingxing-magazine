@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation":"/components/navigation/navigation",
+    "loadingmore": "/components/loadingmore/loadingmore",
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom"
+}

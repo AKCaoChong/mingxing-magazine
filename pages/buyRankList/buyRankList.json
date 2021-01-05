@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "排行榜"
+}

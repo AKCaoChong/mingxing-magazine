@@ -1,0 +1,139 @@
+@import "../../template/previewSwiperTem/previewSwiperTem.wxss";
+@import"../../template/buyViewTemplate/buyViewTemplate.wxss";
+@import"../../template/readCodeTemplate/readCodeTemplate.wxss";
+@import"../../template/goumaishuoming/goumaishuoming.wxss";
+@import"../../template/shareTemplate/shareTemplate.wxss";
+.swiper-container{
+  
+}
+
+.bottom-group{
+  width: 100%;
+  /* margin: 0 auto; */
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-group .isbuy{
+  background: #c6343e;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  line-height: 90rpx;
+  text-align: center;
+}
+
+.bottom-group .buy-view{
+  background: #c6343e;
+  font: 30px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.buy-view .android-buy{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.android-buy > view{
+  height: 90rpx;
+  line-height: 90rpx;
+  flex: 1;
+  text-align: center;
+}
+
+.android-buy > view.previewLine{
+  flex: 0 0 1px;
+}
+
+.buy-view .ios-buy{
+  width: 100%;
+  background: #c6343e;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+} 
+
+.bottom-group .paihang-group{
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.paihang-group .paihang{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.paihang image{
+  width: 40rpx;
+  height: 40rpx;
+  padding-right: 5px;
+  box-sizing: border-box;
+}
+
+.paihang-group > view.previewLine{
+  flex: 0 0 1px;
+}
+
+.paihang-group .share{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewPay{
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 555;
+  transform: translateY(100%);
+  bottom: 0;
+}
+
+.iosNoPay{
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 555;
+  transform: translateY(100%);
+  bottom: 0;
+}
+
+.gmsmtanchu{
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 666;
+  transform: translateY(100%);
+  bottom: 0;
+}
+
+.PreviewShare {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 555;
+  transform: translateY(100%);
+  bottom: 0;
+}

@@ -1,0 +1,43 @@
+.content-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+  height: 100rpx;
+}
+
+.content-group .left-code{
+  width: 60%;
+  flex: 1;
+  text-align: left;
+  font-size: 30rpx;
+}
+
+.content-group .right-group{
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right-group .btn{
+  font-size: 28rpx;
+  text-align: center;
+  color: #000;
+  background: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+
+.btn::after{ 
+  border: 1px solid #dedede;
+  border-radius: 10rpx;
+}

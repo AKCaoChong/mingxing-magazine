@@ -1,0 +1,15 @@
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<navigation page-name="瑞丽明星电子刊" bindtonext="homeClick" iconSrc="/images/indexNav.png"></navigation>
+<view class="getFreeEmag" style="margin-top:{{naviHeight + 36}}px">
+  <view class='getFreeImage'>
+    <image src='{{avatarUrls}}' mode='widthFix'></image>
+  </view>
+  <text class='f25'>{{nickNames}}</text>
+  <view class="mianfeikan">请您免费看《{{emagtitles}}》，共1本，点击领取</view>
+  <view class="getFreeimgOut"><image src="{{bigImages}}" class="getFreeimg" mode="widthFix"></image></view>
+  <view class="robViews">
+    <view class="qiang" bindtap="getFreeEmagBtn">
+      <image src="/images/rob.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

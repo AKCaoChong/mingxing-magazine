@@ -1,0 +1,58 @@
+page{
+  background: #c6343e;
+}
+.getFreeEmag {
+  display: flex;
+  flex-direction: column;
+  border: #ccc 1px solid;
+  border-radius: 5px;
+  width: 620rpx;
+  margin: 60rpx auto 0 auto;
+  padding: 30rpx 0 180rpx 0;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  box-shadow: -10rpx 10rpx 50rpx #6b2a2e
+}
+
+.getFreeImage image{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+
+.mianfeikan{
+  margin-top: 25rpx;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.getFreeimgOut {
+  width: 251rpx;
+  height: 376rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+  box-shadow: -10rpx 10rpx 50rpx #dbdcdd;
+}
+
+.getFreeimg{
+  width: 251rpx;
+  height: 376rpx;
+}
+
+.robViews{
+  position: absolute;
+  bottom: -115rpx;
+}
+
+.qiang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qiang image{
+  width: 314rpx;
+  height: 248rpx;
+}

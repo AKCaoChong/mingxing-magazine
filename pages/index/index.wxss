@@ -1,0 +1,217 @@
+@import "../../template/leftEmagList/leftEmagList.wxss";
+@import "../../template/rightEmagList/rightEmagList.wxss";
+@import "../../template/emagList/emagList.wxss";
+.navi-view{
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+}
+.navi-view .search-view{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #f6f6f6;
+  font-size: 15px;
+}
+.navi-view .search-icon {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.navi-view .nav-input{
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+
+.navi-view .placeholder-navinput{
+  font-size: 30rpx;
+}
+
+.page-content{
+  position: absolute;
+}
+
+.outtercontainer{
+  width: 100%;
+  background: #fff;
+}
+.swiper-block{
+  width: 100%;
+  margin-top: 10px;
+}
+.swiper-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: unset;
+}
+.slide-image{
+  transform: scale(0.9);
+  transition: all .2s ease-in 0s;
+  border-radius: 9rpx;
+  box-shadow: 0px 0px 30rpx rgba(0, 0, 0, .2);
+  margin: 0rpx 30rpx;
+  z-index: 1;
+}
+.active {
+  transform: scale(1.1);
+  transition: all .2s ease-in 0s;
+  z-index: 20;
+}
+
+.bottom-group{
+  width: 100%;
+  padding: 30rpx 0 20rpx 0;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.bottom-group .kan-title{
+  font-size: 34rpx;
+}
+
+.bottom-group .kan-number{
+  margin-top: 20rpx;
+  font-size: 20rpx;
+  color: red;
+}
+
+.users-header{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0 40rpx 0;
+  justify-content: center;
+}
+
+.users-header image{
+  width: 53rpx;
+  height: 53rpx;
+  border-radius: 50%;
+  margin: 0 10rpx;
+}
+
+.gray-line {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f6f6f6;
+}
+
+.search-group{
+  width: 100%;
+  background: #fff;
+}
+
+.search-group .search {
+  margin: 20rpx 40rpx;
+  height: 70rpx;
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 35rpx;
+  box-sizing: border-box;
+}
+
+.search-group .search-icon {
+  /* position: absolute; */
+
+}
+
+.search-group .search-input {
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220rpx;
+  text-align: left;
+  font-size: 30rpx;
+}
+.placeholder-input {
+  font-size: 30rpx;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_row{
+  display: flex;
+  flex-direction: row
+}
+
+.item-tags{
+  margin-top: 40rpx;
+  padding: 0 30rpx;
+}
+
+.item-tags .item-tags-list{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.item-tags-list .item-text{
+  padding: 10rpx 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.normal{
+  background: #f6f6f6;
+  color: #353535;
+}
+
+.select{
+  background: #e7e5e5;
+  color: #fff;
+}
+
+.emagList-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 40rpx;
+}
+
+.emagList-container > view{
+  width: 340rpx;
+  overflow: hidden;
+}
+
+.bottom-page-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.emag-page{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600rpx;
+  margin-top: 30rpx;
+  /* padding-left: 20rpx;
+  padding-right: 20rpx;
+  box-sizing: border-box; */
+}
+
+.emag-page > view{
+  width: 270rpx;
+}
+

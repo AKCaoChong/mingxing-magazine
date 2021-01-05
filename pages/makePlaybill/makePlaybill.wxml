@@ -1,0 +1,8 @@
+<view class="saveShare {{isIosX?'marginBottom':''}}">
+  <button bindtap='saveImageToPhotos' hidden='{{saveImagebtn}}'>保存分享海报</button>
+  <button hidden='{{!saveImagebtn}}' open-type='openSetting' bindopensetting='saveImageToShouquan'>去授权</button>
+</view>
+<view class="shareImage {{isIosX?'marginBottom':''}}">
+  <image src='{{shareimgurl}}' mode='widthFix'></image>
+</view>
+<canvas class='canvas' style='width:{{canvasWidth}}px; height:{{canvasHeight}}px' canvas-id='canvas'></canvas>

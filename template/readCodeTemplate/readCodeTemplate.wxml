@@ -1,0 +1,16 @@
+<template name="readCodeTemplate">
+  <view class="closePreviewcss" bindtap="closeIosPaybtn">
+    <image src="/images/close.png" mode="widthFix"></image>
+  </view>
+<form bindsubmit="yuedumaconfirm" class="goumaiyuedumatem">
+  <view class="chosePreview">
+    <view class="yuedumatitle">请输入阅读码</view>
+    <view class="yuedumainner">
+      <view class="yuedumainpuNum">
+        <input name="yuedumaNumber" type="text" placeholder="阅读码" style="height:80rpx;line-height:80rpx; "></input>
+      </view>
+      <button form-type="submit" class="yuedumabuybtn" style="height:90rpx;line-height:90rpx;width:30%;">确定</button>
+    </view>
+  </view>
+</form>
+</template>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "searchbar": "/components/searchbar/searchbar",
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "瑞丽明星电子刊"
+}

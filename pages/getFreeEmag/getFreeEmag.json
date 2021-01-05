@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation",
+    "dialog": "/components/dologin/dologin"
+  },
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom"
+}

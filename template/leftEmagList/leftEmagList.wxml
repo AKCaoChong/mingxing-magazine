@@ -1,0 +1,13 @@
+<template name = "leftEmagListTemplate">
+  <view class="leftEmag-group">
+    <view class="leftEmag-number"><text>{{index+1}}</text></view>
+    <view class="leftEmag-main">
+      <view class="leftEmag-img" bindtap="onQiKanClick" data-kanid="{{id}}" data-thumlogo="{{thum_logo}}"><image src="{{thum_logo}}" mode="widthFix"></image></view>
+      <text class="leftEmag-title">{{title}}</text>
+      <view class="leftEmag-dy">
+        <view class="f25" bindtap="onTypeClick" data-typeid="{{type}}" data-typename="{{typename}}">{{typename}}</view>
+        <view class="f25"><text>{{buynum}}</text> 订阅</view>
+      </view>
+    </view>
+  </view>
+</template>

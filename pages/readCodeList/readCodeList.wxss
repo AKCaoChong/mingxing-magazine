@@ -1,0 +1,35 @@
+@import "../../template/codeActiveTem/codeActiveTem.wxss";
+@import "../../template/codeNoActiveTem/codeNoActiveTem.wxss";
+@import "../../template/codeSendingTem/codeSendingTem.wxss";
+@import "../../template/codeShareingTem/codeShareingTem.wxss";
+.codecontainer-group{
+  background: #fff;
+  width: 100%;
+  z-index: 1;
+}
+
+.readcode-desc{
+  width: 100%;
+  font-size: 30rpx;
+  color: #ccc;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+}
+.bottom-view{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-view .copyall-btn{
+  color: white;
+  background: #c6343e;
+  font-size: 30rpx;
+  width: 60%;
+  border-radius: 10rpx;
+}

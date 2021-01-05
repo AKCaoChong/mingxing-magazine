@@ -1,0 +1,48 @@
+<import src="../../template/previewSwiperTem/previewSwiperTem.wxml" />
+<import src="../../template/buyViewTemplate/buyViewTemplate.wxml" />
+<import src="../../template/readCodeTemplate/readCodeTemplate.wxml" />
+<import src="../../template/goumaishuoming/goumaishuoming.wxml" />
+<import src="../../template/shareTemplate/shareTemplate.wxml" />
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<navigation page-name="{{articleTitle}}" bindtonext="backNavClick" iconSrc="/images/home-off.png"></navigation>
+<view class="swiper-container" style="top:{{navH}}px;height:{{(windowHeight-bottomGroupHeight-navH)}}px;">
+  <template is="previewSwiperTem" data="{{...swiperItems}}"></template>
+</view>
+<view class="bottom-group" style="height:{{bottomGroupHeight}}px">
+  <view wx:if="{{isBuy}}" class="buy-view isbuy">
+    <view wx:if="{{isAndroid}}" class="android-buy">
+      <view bindtap="readClick">开始阅读</view>
+      <view class="previewLine">|</view>
+      <view bindtap="previewPayBtn">再次购买</view>
+    </view>
+    <view wx:else class="ios-buy" bindtap="readClick">开始阅读</view>
+  </view>
+  <view wx:else class="buy-view nobuy">
+    <view wx:if="{{isAndroid}}" class="android-buy">
+      <view bindtap="previewPayBtn">购买</view>
+      <view class="previewLine">|</view>
+      <view bindtap="buyCodeClick">阅读码</view>
+    </view>
+    <view wx:else class="ios-buy" bindtap="buyCodeClick">开始阅读</view>
+  </view>
+  <view class="paihang-group">
+    <view class="paihang" bindtap="paihangClick" data-nowid="{{ariticleId}}"><image src="/images/phb01.png" mode="widthFix"></image><text>排行榜</text></view>
+    <view class="previewLine">|</view>
+    <view class="paihang" bindtap="shareClick"><image src="/images/phb02.png" mode="widthFix"></image><text>分享</text></view>
+  </view>
+</view>
+<view class="previewPay {{isiOSX?'marginBottom':''}}" animation="{{ani}}">
+  <template is="buy-view" data="{{articleTitle,lastIndex,...pricePrivew,num,minusStatus,customPrice}}"></template>
+</view>
+
+<view class="iosNoPay {{isiOSX?'marginBottom':''}}" animation="{{iosani}}">
+  <template is="readCodeTemplate"></template>
+</view>
+
+<view class="gmsmtanchu {{isiOSX?'marginBottom':''}}" animation="{{gmsm_ani}}">
+  <template is="goumaishuoming"></template>
+</view>
+
+<view class="PreviewShare {{isiOSX?'marginBottom':''}}" animation="{{aniShare}}">
+  <template is="shareTemplate" data=""></template>
+</view>

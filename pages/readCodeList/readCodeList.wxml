@@ -1,0 +1,32 @@
+<import src="../../template/codeActiveTem/codeActiveTem.wxml" />
+<import src="../../template/codeNoActiveTem/codeNoActiveTem.wxml" />
+<import src="../../template/codeSendingTem/codeSendingTem.wxml" />
+<import src="../../template/codeShareingTem/codeShareingTem.wxml" />
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<shareConfirm id="shareConfirm" title="分享提示" content="您将分享此阅读码{{sharecode}}" confirmText="知道了" bind:onConfirmEvent='onConfirmEvent'></shareConfirm>
+<view class="codecontainer-group" style="padding-bottom:{{isiOSX?84:50}}px">
+  <view class="readcode-desc">每个阅读码对应一本电子刊，每个阅读码只可被激活一次，每人只能激活每本刊的一个阅读码，更多阅读码可以送给朋友。微信分享后48小时内未被领取将自动恢复未激活状态。</view>
+  <block wx:for="{{items}}" wx:key="{{index}}">
+    <view wx:if="{{index===0}}" slot="0" class="page-active {{isIosX?'marginBottom':''}}">
+      <block wx:for="{{activeCodes}}" wx:key="{{index}}">
+        <block wx:if="{{item.status=='1'}}">
+          <template is="codeActiveTem" data="{{...activeCodes[index]}}"></template>
+        </block>
+        <block wx:elif="{{item.status==0&&item.copystatus=='0'&&item.sharestatus=='0'}}">
+          <template is="codeNoActiveTem" data="{{...activeCodes[index]}}"></template>
+        </block>
+        <block wx:elif="{{item.sharestatus==1}}">
+          <template is="codeShareingTem" data="{{...activeCodes[index]}}"></template>
+        </block>
+        <block wx:elif="{{item.copystatus==1}}">
+          <template is="codeSendingTem" data="{{...activeCodes[index]}}"></template>
+        </block>
+      </block>
+    </view>
+    <view wx:if="{{index===1}}" slot="1" class="page-noactive {{isIosX?'marginBottom':''}}"></view>
+  </block>
+  <!-- <loadingmore hasmore="{{hasmore}}"></loadingmore> -->
+</view>
+<view class="bottom-view" style="margin-bottom:{{isiOSX?34:0}}px;display:{{isCopy==false ? 'none':''}};">
+  <button class="copyall-btn" bindtap="copyAllClick">批量复制阅读码</button>
+</view>

@@ -1,0 +1,117 @@
+.myemag-group {
+  width: 100%;
+  height: 300rpx;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  box-sizing: border-box;
+  border-bottom: #ededed 1px solid;
+}
+
+.myemag-group .left-img{
+  width: 25%;
+  overflow: hidden;
+}
+
+.left-img image{
+  width: 100%;
+}
+
+.myemag-group .middle-view{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title-top{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  word-break: break-all;
+}
+
+.title-top .emag-title{
+  font-size: 32rpx;
+  text-align: left;
+  width: 100%;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  color: #000;
+}
+
+.title-top .emag-type{
+  text-align: left;
+  color: #999;
+  padding-top: 5rpx;
+}
+
+.count-bottom{
+  color: #999;
+  text-align: left;
+}
+
+.myemag-group .right-btns{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.right-btns .sharebtn{
+  color: #fff;
+  background: #c6343e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: 10rpx;
+  line-height: 2;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: auto;
+  position: relative;
+  font-size: 28rpx;
+}
+
+.sharebtn image{
+  width: 36rpx;
+  height: 34rpx;
+  padding-right: 5rpx;
+}
+
+.sharebtn::after{
+  border: 1px solid #c6343e;
+  border-radius: 10rpx;
+}
+
+.right-btns .readcodebtn{
+  font-size: 28rpx;
+  text-align: center;
+  color: #000;
+  background: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+
+.readcodebtn::after{ 
+  border: 1px solid #dedede;
+  border-radius: 10rpx;
+}

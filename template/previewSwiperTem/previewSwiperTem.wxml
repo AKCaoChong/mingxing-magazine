@@ -1,0 +1,11 @@
+<template name="previewSwiperTem">
+  <view class="swiper-container">
+    <swiper class="preview-swiper" indicator-dots="true" indicator-color="gray" indicator-active-color="white" circular="true" bindchange="swiperChange">
+      <block wx:for="{{sliders}}" wx:key="unique">
+        <swiper-item class="swiper-item">
+          <image src="{{item.imgurl}}" mode="aspectFill" class="img"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</template>

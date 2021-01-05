@@ -1,0 +1,104 @@
+.result-title {
+  text-align: center;
+  padding: 20rpx 0 40rpx 0;
+  color: #c6343e;
+  font-size: 45rpx;
+  font-weight: bold;
+}
+
+.container-group{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 90%;
+  margin: 0 auto 60rpx auto;
+  padding: 30rpx 0;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: relative;
+  box-shadow: -10rpx 10rpx 50rpx #dbdcdd;
+}
+
+.head-img{
+  position: absolute;
+  top: 24rpx;
+}
+
+.head-img image{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+}
+
+.getfreeNickname{
+  margin-top: 60rpx;
+  padding: 50rpx  0 20rpx 0;
+  font-size: 28rpx;
+  line-height: 28rpx;
+}
+
+.getFreeimgOut{
+  width: 251rpx;
+  height: 376rpx;
+  margin-top: 33rpx;
+  overflow: hidden;
+  box-shadow: -10rpx 10rpx 50rpx #dbdcdd;
+}
+
+.getFreeimg {
+  width: 251rpx;
+  height: 376rpx;
+}
+
+.kaishiyuedu {
+  margin: 55rpx 0;
+  width: 360rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50rpx;
+  background: #c6343e;
+  color: #fff;
+}
+
+.getNumber{
+  width: 90%;
+  text-align: left;
+  margin: 0 auto 20rpx auto;
+}
+
+.getList{
+  margin: 0 auto ;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 25rpx 0;
+}
+
+.getList image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.getContent{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20rpx;
+}
+
+.people-name{
+  padding-bottom: 5rpx;
+}
+
+.people-time{
+  padding-top: 5rpx;
+}

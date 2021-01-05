@@ -1,0 +1,19 @@
+<view class="myemag-group" bindtap="onRowClick" data-id='{{item.aid}}' data-buynum='{{item.buy_num}}' data-overnum='{{item.over_num}}' data-nowid='{{item.id}}' data-bigimages='{{item.thum_logo}}' data-emagtitles='{{item.title}}' data-emagtype='{{item.type}}' data-emagtypename="{{item.typename}}">
+  <view class="left-img">
+    <image src="{{item.thum_logo}}" mode="widthFix"></image>
+  </view>
+  <view class="middle-view">
+    <view class="title-top">
+      <text class="emag-title">{{item.title}}</text>
+      <view class="emag-type f25">{{item.typename}}</view>
+    </view>
+    <view class="count-bottom">
+      <view class="f25">数量:{{item.buy_num}} 剩余:{{item.over_num}}</view>
+    </view>
+  </view>
+  <view class="right-btns" hover-stop-propagation="true">
+    <button class="readcodebtn" open-type="" style="width:100%; height:80rpx;" catchtap="readCodeBtnClick" data-id='{{item.aid}}' data-buynum='{{item.buy_num}}' data-overnum='{{item.over_num}}' data-nowid='{{item.id}}' data-bigimages='{{item.thum_logo}}' data-emagtitles='{{item.title}}' data-emagtype='{{item.type}}' data-emagtypename="{{item.typename}}">阅读码    </button>
+    <button class="sharebtn" open-type="" style="width:100%; height:80rpx; display:none;" catchtap="shareBtnClick" data-id='{{item.aid}}' data-buynum='{{item.buy_num}}' data-overnum='{{item.over_num}}' data-nowid='{{item.id}}' data-bigimages='{{item.thum_logo}}' data-emagtitles='{{item.title}}' data-emagtype='{{item.type}}' data-emagtypename="{{item.typename}}"><image src="/images/fxgeihoayou.png"></image>邀好友看</button>
+    
+  </view>
+</view>

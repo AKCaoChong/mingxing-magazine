@@ -1,0 +1,80 @@
+@import "../../template/emagList/emagList.wxss";
+.bigListTcss{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 586rpx;
+  height: 879rpx;
+}
+
+.bigListTcss image{
+  width: 586rpx;
+  height: 879rpx;
+}
+
+.bigListTitle{
+  padding: 30rpx 0 20rpx 0;
+  width: 586rpx;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.dingyueDown{
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0 40rpx 0;
+}
+
+.dingyueDown image{
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+  margin: 0 10rpx;
+}
+
+.segment-bg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.emag-page{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 600rpx;
+  margin-top: 40rpx;
+}
+
+.emag-page > view{
+  width: 270rpx;
+}
+
+.bottom-navi {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background: #f6f6f6;
+}
+
+.bottom-navi view{
+  width: 30%;
+  padding: 20rpx 0;
+  text-align: center;
+  border-bottom: #f6f6f6 3px solid;
+  color: #999
+}
+
+.bottom-navi view.all-on{
+  border-bottom: #000 3px solid;
+  color: #000
+}

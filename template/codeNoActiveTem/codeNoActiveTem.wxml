@@ -1,0 +1,9 @@
+<template name="codeNoActiveTem">
+  <view class="content-group">
+    <view class="left-code">{{code}}</view>
+    <view class="right-group">
+      <button class="btn copybtn" bindtap="copyBtnClick" style="width:130rpx;height:60rpx;" data-codestr="{{code}}">复制</button>
+      <button class="btn sendfriend" open-type="" bindtap="bindCodeShareBtnClick" style="width:130rpx;height:60rpx;" data-codestr="{{code}}">送好友</button>
+    </view>
+  </view>
+</template>

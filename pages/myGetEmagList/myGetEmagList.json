@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "loadingMore": "/components/loadingmore/loadingmore"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "我领到的杂志"
+}

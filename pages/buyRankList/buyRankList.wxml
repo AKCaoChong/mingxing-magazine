@@ -1,0 +1,52 @@
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<view class="rank-content" hidden="{{content.length<=0}}"><rich-text nodes="{{content}}"></rich-text> </view>
+ <view class="phbbg">
+  <view class="qianSanMing">
+    <view class='qsmCss' bindtap="topclick">
+      <view class='qsmNum2'><view>TOP2</view></view>
+      <view class='qsmImage'><image src='{{people[1].headimg}}' mode='widthFix'></image></view>
+    </view>
+    <view class='qsmCss qsmFirst'>
+      <view class='qsmNum2'><view class="one">TOP1</view></view>
+      <view class='qsmImage'><image src='{{people[0].headimg}}' mode='widthFix'></image></view>
+    </view>
+    <view class='qsmCss'>
+      <view class='qsmNum2'><view class="thr">Top3</view></view>
+      <view class='qsmImage'><image src='{{people[2].headimg}}' mode='widthFix'></image></view>
+    </view>
+  </view>
+  <view class='qianSanMing qianSanMing1'>
+    <view class='qsmCss'>
+      <view>{{people[1].nickname}}</view>
+    </view>
+    <view class='qsmCss'>
+      <view>{{people[0].nickname}}</view>
+    </view>
+    <view class='qsmCss'>
+      <view>{{people[2].nickname}}</view>
+    </view>
+  </view>
+  <view class='qianSanMing'>
+    <view class='qsmCss'>
+      <view class='qsmDownNum f25'>购买{{people[1].buy_num}}本</view>
+    </view>
+    <view class='qsmCss qsmFirst'>
+      <view class='qsmDownNum f25'>购买{{people[0].buy_num}}本</view>
+    </view>
+    <view class='qsmCss'>
+      <view class='qsmDownNum f25'>购买{{people[2].buy_num}}本</view>
+    </view>
+  </view>
+ </view>
+ <block wx:for="{{people}}" wx:key='{{index}}'>
+  <view class="phbList" wx:if="{{index>2}}">
+    <view class="qshiming">
+      <view class="qsmNum1">{{index+1}}</view>
+      <view class='qsmImage1'><image src='{{people[index].headimg}}' mode='widthFix'></image></view>
+      <view class='nicheng'>{{people[index].nickname}}</view>
+      <view class='qsmDownNum1 f25'>购买{{people[index].buy_num}}本书</view>
+    </view>
+  </view>
+ </block>
+ <view class="zhanweifu"></view>
+ <view hidden="{{over==1}}" class="huodongyijiezhi  {{isIosX?'marginBottom':''}}">活动已截止</view>

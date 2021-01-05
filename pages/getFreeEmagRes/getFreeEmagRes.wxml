@@ -1,0 +1,21 @@
+<navigation page-name="瑞丽明星电子刊" bindtonext="homeClick" iconSrc="/images/indexNav.png"></navigation>
+<view class="result-title" style="margin-top:{{naviHeight + 20}}px">{{resultTitle}}</view>
+<view class="container-group {{isIosX?'marginBottom':''}}" >
+  <view class="head-img">
+    <image src="{{avatarUrls}}" mode="widthFix"></image>
+  </view>
+  <text class="getfreeNickname f25">{{nickNames}}</text>
+  <text>请您免费看《{{emagtitles}}》</text>
+  <view class="getFreeimgOut"><image src="{{bigImages}}" class="getFreeimg" mode="widthFix"></image></view>
+  <view class="kaishiyuedu" bindtap="resultBtnClick">{{btnTitle}}</view>
+</view>
+<view class="getNumber f25" style="display: none;">已领取{{1}}本,共{{1}}本</view>
+<block wx:for="{{people}}" wx:key="{{index}}">
+  <view class="getList">
+    <image src="{{item.headimg}}" mode="widthFix"></image>
+    <view class="getContent">
+      <text class="people-name" >{{item.nickname}}</text>
+      <text class="people-time f25">{{peopleCreateTime[index]}}</text>
+    </view>
+  </view>
+</block>

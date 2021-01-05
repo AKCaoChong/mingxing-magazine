@@ -1,0 +1,5 @@
+<view class='searchbar'>
+  <view class='search-input-group'>
+    <input class="search-input" placeholder="搜索" bindinput="onInputEvent"></input>
+  </view>
+</view>

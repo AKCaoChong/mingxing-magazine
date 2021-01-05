@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/emagPreview/emagPreview",
+    "pages/buyRankList/buyRankList",
+    "pages/emagDetail/emagDetail",
+    "pages/makePlaybill/makePlaybill",
+    "pages/myEmags/myEmags",
+    "pages/classifyEmags/classifyEmags",
+    "pages/getFreeEmagRes/getFreeEmagRes",
+    "pages/getFreeEmag/getFreeEmag",
+    "pages/myGetEmagList/myGetEmagList",
+    "pages/inviteFriend/inviteFriend",
+    "pages/readCodeList/readCodeList",
+    "pages/classifyMine/classifyMine"
+  ],
+  "window": {
+    "backgroundColor": "#eeeeee",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "backgroundColorTop": "#fff",
+    "onReachBottomDistance":100
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home-off.png",
+        "selectedIconPath": "images/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/my-off.png",
+        "selectedIconPath": "images/my-on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+  
+}

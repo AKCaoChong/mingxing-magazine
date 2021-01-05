@@ -1,0 +1,41 @@
+<import src="../../template/emagList/emagList.wxml" />
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<navigation page-name="{{navtitle}}" bindtonext="homeClick" iconSrc="/images/indexNav.png"></navigation>
+<view class="container" style="margin-top:{{naviHeight}}px;">
+  <view class="bigListTcss" bindtap="toEmagPreview" data-kanid="{{newstEmg.id}}" data-thumlogo="{{newstEmg.logo}}">
+    <image src="{{newstEmg.logo}}" mode="widthFix"></image>
+  </view>
+  <text class="bigListTitle f34">{{newstEmg.title}}</text>
+  <view class="f25"><text>{{newstEmg.buynum}}</text>订阅</view>
+  <view class="dingyueDown" bindtap="toRankList" data-nowid="{{newstEmg.id}}">
+    <block wx:for="{{fans}}" wx:key="{{index}}">
+      <image src="{{item.headimg}}" mode="widthFix"></image>
+    </block>
+    <image src="/images/threerots.png" mode="widthFix"></image>
+  </view>
+  <!-- <view class="emag-page {{isIosX?'marginBottom':''}}">
+     <block wx:for="{{wenzhangliebiao}}" wx:key="{{index}}">
+        <template is="emagListTemplate" data="{{...item}}"></template>
+    </block>
+  </view> -->
+  <view class="segment-bg">
+    <segment items="{{items}}" defaultIndex="0" binditemchanged="onPageChangedEvent" class="segment">
+      <view slot="0" class="emag-page {{isIosX?'marginBottom':''}}">
+        <block wx:for="{{newestwenzhangliebiao}}" wx:key="{{index}}">
+          <template is="emagListTemplate" data="{{...item}}"></template>
+        </block>
+      </view>
+      <view slot="1" class="emag-page {{isIosX?'marginBottom':''}}">
+        <block wx:for="{{hotestwenzhangliebiao}}" wx:key="{{index}}">
+          <template is="emagListTemplate" data="{{...item}}"></template>
+        </block>
+      </view>
+    </segment>
+  </view>
+  <loadingmore hasmore="{{hasmore}}"></loadingmore>
+</view>
+<view class="bottom-navi {{isIosX?'marginBottom':''}}">
+  <view class='all-on'>全部杂志</view>
+  <view bindtap='goToMy'>我的</view>
+</view>
+

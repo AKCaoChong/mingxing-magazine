@@ -1,0 +1,11 @@
+<template name="codeSendingTem">
+  <view class="contentSending-group">
+    <view class="sendingleft-group">
+      <view class="sendingcode-view">{{code}}</view>
+      <view class="sendingstatus-view f25">已复制赠送中</view>
+    </view>
+    <view class="btn-view">
+        <button class="btn copybtn" bindtap="copyBtnClickAgain" style="width:150rpx;height:60rpx;" data-codestr="{{code}}">再次复制</button>
+    </view>
+  </view>
+</template>

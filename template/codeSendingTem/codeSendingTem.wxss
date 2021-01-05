@@ -1,0 +1,46 @@
+.contentSending-group{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.contentSending-group .sendingleft-group{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.sendingleft-group .sendingcode-view{
+  font-size: 30rpx;
+  padding-bottom: 10rpx;
+}
+
+.sendingleft-group .sendingstatus-view{
+  padding-top: 10rpx;
+}
+
+.btn-view .btn{
+  font-size: 28rpx;
+  text-align: center;
+  color: #000;
+  background: #dedede;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: auto;
+  line-height: 2;
+}
+
+.btn::after{ 
+  border: 1px solid #dedede;
+  border-radius: 10rpx;
+}

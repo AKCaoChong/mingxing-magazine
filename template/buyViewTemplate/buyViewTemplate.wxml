@@ -1,0 +1,37 @@
+<template name="buy-view">
+  <view class="closePreviewcss" bindtap="closePreview">
+    <image src="/images/close.png" mode="widthFix"></image>
+  </view>
+  <view class="goumai">
+    <text class="f34">购买</text>
+    <text class="gmsmtitle">{{articleTitle}}</text>
+    <text class="f25" bindtap="gmsmClick">购买说明?</text>
+  </view>
+  <view class="chosePreview">
+    <view class="f25">选择数量:</view>
+    <view class="previewShuliang">
+      <block wx:for="{{previews}}" wx:key="{{index}}">
+        <view wx:if="{{index===lastIndex}}" class="price-sel" bindtap="choseMoney" data-index="{{index}}">
+          <text>{{item.num}} 本</text>
+          <text>￥{{item.price}}</text>
+        </view>
+        <view wx:else class="price-normal" bindtap="choseMoney" data-index="{{index}}">
+          <text>{{item.num}} 本</text>
+          <text>￥{{item.price}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="custom-price">
+    <view class="f25">自定义本数:</view>
+    <view class="stepper-group">
+      <view class="stepper">
+        <text class="{{minusStatus}}" type="number" bindtap="bindMinus">-</text>
+        <input bindinput="bindManual" value="{{num}}"></input>
+        <text bindtap="bindPlus">+</text>
+      </view>
+      <view class="price-label">￥{{customPrice}}</view>
+    </view>
+  </view>
+  <button class="buyBtn" bindtap="androidBuy" size="default">购买</button>
+</template>

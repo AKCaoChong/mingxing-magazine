@@ -1,0 +1,11 @@
+<!--components/dologin/dologin.wxml-->
+<view class="share-container" hidden="{{!isShow}}">
+  <view class="share-mask"></view>
+  <view class="share-info">
+    <view class="share-title">{{ title }}</view>
+    <view class="share-content">{{ content }}</view>
+    <view class="share-footer">
+      <button class="share-btn" open-type="share" catchtap="onConfirmEvent">{{ confirmText }}</button>
+    </view>
+  </view>
+</view>

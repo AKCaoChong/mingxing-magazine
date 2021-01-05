@@ -1,0 +1,12 @@
+<template name="codeActiveTem">
+  <view class="code-group">
+    <view class="left-group">
+      <view class="code-view">{{code}}</view>
+      <view class="status-view f25">已激活</view>
+    </view>
+    <view class="right-group">
+      <image src="{{headimg}}"></image>
+      <view class="nick-view">{{nickname}}</view>
+    </view>
+  </view>
+</template>

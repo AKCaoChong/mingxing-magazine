@@ -1,0 +1,145 @@
+.closePreviewcss {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.closePreviewcss image{
+  width: 37rpx;
+}
+
+.goumai{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rpx;
+}
+
+.goumai text{
+  padding: 10rpx 0 6rpx 0;
+}
+
+.goumai text.gmsmtitle{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chosePreview{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 0 20rpx 0;
+  margin-top: 10rpx;
+}
+
+.previewShuliang{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.previewShuliang  view{
+  width: 45%;
+  line-height: 40rpx;
+  background: #d6d6d6;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 25rpx 0;
+  padding: 5rpx 0;
+  color: #000;
+  font-size: 25rpx;
+}
+
+.previewShuliang .price-sel{
+  background: #c6343e;
+  color: #fff;
+}
+
+.custom-price{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0rpx 0 20rpx 0;
+  margin-top: 10rpx;
+}
+
+.custom-price .stepper-group{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* margin: 25rpx 0; */
+}
+
+.custom-price .stepper{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 45%;
+  height: 80rpx;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin: 25rpx 0;
+  padding: 5rpx 0;
+}
+
+.stepper text{
+  /* float: left; */
+  width: 20%;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.stepper input{
+  width: 60%;
+  height: 80rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.stepper-group .price-label{
+  width: 45%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #d6d6d6;
+  border-radius: 3px;
+  text-align: center;
+  margin: 25rpx 0;
+  padding: 5rpx 0;
+  color: #000;
+  font-size: 25rpx;
+}
+/* 普通样式*/
+.stepper .normal{
+  color: black;
+}
+/*禁用样式*/
+.stepper .disable{
+  color: #ccc;
+}
+
+.buyBtn {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #c6343e;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+  font-size: 34rpx;
+}
+

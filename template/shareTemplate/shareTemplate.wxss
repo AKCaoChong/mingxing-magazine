@@ -1,0 +1,54 @@
+.closePreviewCss {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.closePreviewCss image{width:36rpx; height: 37rpx;}
+.previewShareTitle {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.previewShareBtnCss {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.previewShareBtnCss .fximg1{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.previewShareBtnCss button, .userinfo button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.2;
+  border-radius: 0;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  color: #000;
+  background-color: #fff;
+  border: 0px;
+}
+
+.previewShareBtnCss button::after {
+  border: none;
+}
+.fximg1 image{width:38rpx; height: 37rpx; margin-right: 10rpx}
+.fximg image{width:40rpx; height: 35rpx; margin-right: 10rpx}

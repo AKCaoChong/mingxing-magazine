@@ -1,0 +1,6 @@
+<!--components/direcNormalRow/direcNormalRow.wxml-->
+<view class="row-group" bindtap="direToUrl">
+  <view class="left-img"><image src="{{imgUrl}}"></image></view>
+  <view class="text f34">{{labStr}}</view>
+  <view class="right-dire"><image src="/images/myimage_01.png"></image></view>
+</view>

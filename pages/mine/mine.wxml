@@ -1,0 +1,28 @@
+<import src="../../template/shareTemplate/shareTemplate.wxml" />
+<view class="PreviewShare {{isIosX?'marginBottom':''}}" animation="{{aniShare}}">  
+  <template is="shareTemplate" data=""></template>
+</view>
+<view class="mine-group">
+  <view class="userinfo">
+    <view class="myLogoCss">
+      <image class="userinfo-avatar" src="{{userInfo.headImg}}" mode="cover"></image>
+      <text class="userinfo-nickname f34 b">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class="myList">
+    <view class="myList1"><image src="/images/myimage_03.png"></image></view>
+    <view class="myCss f34" data-url="/pages/myEmags/myEmags" bindtap="myGoToUrl">我的杂志</view>
+    <view class="myList2"><image src="/images/myimage_01.png"></image></view>
+  </view>
+  <view class="myList">
+    <view class="myList1"><image src="/images/myimage_06.png"></image></view>
+    <view class="myCss f34 mylianxikefu">分享小程序<button class="mylxkfbtn" open-type="share">分享小程序</button></view>
+    <view class="myList2"><image src="/images/myimage_01.png"></image></view>
+  </view>
+  <view class="myList">
+    <view class="myList1"><image src="/images/myimage_08.png"></image></view>
+    <view class="myCss f34 mylianxikefu">联系客服<button class="mylxkfbtn" open-type="contact">联系客服</button></view>
+    <view class="myList2"><image src="/images/myimage_01.png"></image></view>
+  </view>
+</view>
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>

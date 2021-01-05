@@ -1,0 +1,100 @@
+@import "../../template/shareTemplate/shareTemplate.wxss";
+.mine-group{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.PreviewShare {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  border-top: #ccc 1px solid;
+  z-index: 555;
+  transform: translateY(100%);
+  bottom: 0;
+}
+
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50rpx;
+  border-bottom: #ededed 15rpx solid;
+  width: 100%;
+}
+
+.myLogoCss{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.userinfo-avatar{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 40rpx 0 20rpx 0;
+  border-radius: 50%;
+}
+
+.userinfo-nickname{
+  color: #010101;
+}
+
+.myList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.myList1{
+  flex: 0 0 105rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myList1 image{
+  width: 44rpx;
+  height: 42rpx;
+}
+
+.myList2{
+  flex: 0 0 58rpx;
+  border-bottom: #ededed 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.myList2 image{
+  width: 17rpx;
+  height: 32rpx;
+}
+
+.myCss {
+  flex: 1;
+  border-bottom: #ededed 1px solid;
+  line-height: 100rpx;
+  height: 100rpx;
+}
+
+.mylianxikefu{
+  position: relative;
+}
+
+.mylxkfbtn{
+  width: 100%;
+  opacity: 0;
+  height: 100rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

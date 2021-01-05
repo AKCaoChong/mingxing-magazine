@@ -1,0 +1,9 @@
+<view class="title-view">{{typename}}<text>《{{titlename}}》</text></view>
+<view class="giving-group">
+  <view class="giving-title">赠送本数</view>
+  <input class="giving-input" value="1" type="number" bindinput="beginInput" bindconfirm="endInput"></input>
+  <image src="/images/myimage_01.png"></image>
+</view>
+<view class="giving-sum f25">共可赠{{overnum}}本</view>
+<button class="givingtofriend" open-type="share" data-id='{{id}}' data-buynum='{{buynum}}' data-overnum='{{overnum}}' data-nowid='{{nowid}}' data-bigImages='{{bigImages}}' data-titlename='{{titlename}}' data-typename="{{typename}}">发送给好友</button>
+<view class="bottom-des f25">发出后48小时未领取的电子刊会自动退回,请在阅读码列表中查看</view>

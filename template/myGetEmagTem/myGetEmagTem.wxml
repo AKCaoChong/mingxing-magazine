@@ -1,0 +1,17 @@
+<template name="myGetEmagTemplate">
+  <view class="emag-group" bindtap="toEmagPreview" data-kanid="{{id}}" data-thumlogo="{{thum_logo}}">
+    <view class="emag-img">
+      <image src="{{thum_logo}}" mode="widthFix"></image>
+    </view>
+    <view class="right-group">
+      <view class="title-group">
+        <text class="emag-title">{{title}}</text>
+        <text class="emag-type f25">{{typename}}</text>
+      </view>
+      <view class="time-group f25">
+        <text class="emag-time">{{create_time}}</text>
+        <text class="emag-from">来自{{nickname}}</text>
+      </view>
+    </view>
+  </view>
+</template>

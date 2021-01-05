@@ -1,0 +1,99 @@
+<import src="../../template/leftEmagList/leftEmagList.wxml" />
+<import src="../../template/rightEmagList/rightEmagList.wxml" />
+<import src="../../template/emagList/emagList.wxml" />
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<navigation page-name="瑞丽明星电子刊" bindtonext="searchClick" iconSrc="/images/search.png"></navigation>
+<view class="navi-view" style="height:{{naviHeight}}px;visibility:{{visibility}};opacity:{{opacity}};transition:opacity 1s;display: none;">
+  <view class="search-view" bindtap="onSearchClick" style="height:{{naviSearchHeight}}px;margin-top:{{naviSearchTop}}px;margin-left:20px;width:{{naviSearchWidth}}px;border-radius: {{naviSearchHeight/2}}px">
+    <icon type="search" class="search-icon" size="36rpx"></icon>
+    <input class="nav-input" disabled="true" placeholder="点击搜索电子刊" placeholder-class="placeholder-navinput"></input>
+  </view>
+</view>
+<view class="page-content" style="height:{{windowHeight}}px;margin-top:{{naviHeight}}px;">
+  <view class="outtercontainer">
+    <swiper class="swiper-block" style="height:{{swiperH}}px" previous-margin="{{previousMargin}}px" next-margin="{{netxtMagin}}px" current="{{swiperIndex}}" circular="true" bindchange="swiperChange">
+      <block wx:for="{{recommends}}" wx:index="{{index}}" wx:key="{{index}}">
+        <swiper-item class="swiper-item">
+          <image mode="widthFix" src="{{item.logo}}" class="slide-image {{swiperIndex == index ? 'active':''}}" style="width:{{imgW}}px; height:{{imgH}}px;" bindtap="onQiKanClick" data-kanid="{{item.id}}" data-thumlogo="{{item.logo}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="bottom-group">
+      <text class="kan-title">{{recommends[swiperIndex].title}}
+      </text>
+      <view class="kan-number">
+        <text>{{recommends[swiperIndex].buynum}}</text> 订阅</view>
+      <view class="users-header">
+        <block wx:for="{{recommends[swiperIndex].people}}" wx:key="{{index}}">
+          <image src="{{item.headimg}}" mode="widthFix" bindtap="toRankListClick" data-nowid="{{recommends[swiperIndex].id}}"></image>
+        </block>
+        <image src="/images/threerots.png" mode="widthFix" bindtap="toRankListClick" data-nowid="{{recommends[swiperIndex].id}}"></image>
+      </view>
+      <view class="gray-line"></view>
+      <view class="search-group">
+        <view class="search" bindtap="onSearchClick">
+          <icon type="search" class="search-icon" size="36rpx"></icon>
+          <input class="search-input" disabled="true" placeholder="点击搜索电子刊" placeholder-class="placeholder-input"></input>
+        </view>
+      </view>
+      <view class="item-tags">
+        <view class="item-tags-list">
+          <block wx:for="{{tags}}" wx:key="{{index}}">
+            <text class="item-text select" wx:if="{{currentTagItem == index}}" bindtap="itemTagClick" data-index="{{index}}" data-typeid="{{item.type}}" data-typename="{{item.typename}}">{{item.typename}}</text>
+            <text class="item-text normal" wx:else bindtap="itemTagClick" data-typeid="{{item.type}}" data-typename="{{item.typename}}">{{item.typename}}</text>
+          </block>
+        </view>
+      </view>
+      <!-- <view class="emagList-container">
+        <block wx:for="{{wenzhangliebiao.length}}" wx:key="{{index}}">
+          <template wx:if="{{index===0}}" is="leftEmagListTemplate" data="{{index,...wenzhangliebiao[index]}}"></template>
+          <template wx:elif="{{index%2===0}}" is="leftEmagListTemplate" data="{{index,...wenzhangliebiao[index]}}"></template>
+          <template wx:else is="rightEmagListTemplate" data="{{index,...wenzhangliebiao[index]}}"></template>
+        </block>
+      </view> -->
+    </view>
+    <view class="bottom-page-container">
+      <view class="emag-page">
+        <block wx:for="{{wenzhangliebiao}}" wx:key="{{index}}">
+          <template is="emagListTemplate" data="{{...item}}"></template>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+<template name="goumaishuoming">
+  <view class="goumaishuoming">
+    <view class="closePreviewcss" bindtap="closePreview_gmsm">
+      <image src="/images/close.png" mode="widthFix"></image>
+    </view>
+    <view class="gmsmTitle">购买说明</view>
+    <view class="gmsmcontent"><text>1.购买成功后,请前往"瑞丽Young"小程序阅读相应期刊内容</text>
+      <text>2.电子刊为虚拟产品,如无系统问题,购买后不可退换;</text>
+      <text>3.购买某期电子刊多本后，可赠与好友，自己不能免费抢自己发的电子刊，系统会默认为您保留1本;</text>
+      <text>4.关于阅读码：每个阅读码只能被激活一次;</text>
+      <text>5.如有问题可在小程序个人中心联系客服获取支持。</text>
+    </view>
+    <view class="Iknow" bindtap="closePreview_gmsm">我知道了</view>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "navigation": "/components/navigation/navigation",
+    "loadingmore": "/components/loadingmore/loadingmore",
+    "dialog": "/components/dologin/dologin",
+    "segment":"/components/segment/segment"
+  },
+  "navigationBarTitleText": "",
+  "navigationStyle": "custom"
+}

@@ -1,0 +1,6 @@
+<import src="../../template/myGetEmagTem/myGetEmagTem.wxml" />
+<block wx:for="{{emags}}" wx:key="{{index}}">
+  <template is="myGetEmagTemplate" data="{{...item}}"></template>
+</block>
+<view class="no-data" wx:if="{{nodata==true}}"><text>暂时还未领取过杂志</text></view>
+<loadingMore hasmore="{{hasmore}}" needHidden="{{needHidden}}"></loadingMore>

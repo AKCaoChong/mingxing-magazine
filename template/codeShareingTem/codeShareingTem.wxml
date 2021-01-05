@@ -1,0 +1,9 @@
+<template name="codeShareingTem">
+  <view class="contentShareing-group">
+    <view class="shareingleft-group">
+      <view class="shareingcode-view">{{code}}</view>
+      <view class="shareingstatus-view f25">赠送中已锁定</view>
+    </view>
+    <view class="des-view f25">发出后48小时未被领取将自动恢复未激活状态</view>
+  </view>
+</template>

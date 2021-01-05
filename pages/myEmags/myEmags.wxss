@@ -1,0 +1,15 @@
+.mygetEmag{
+  width: 100%;
+  height:60rpx;
+  background: #dfdfdf;
+  text-align: right;
+  line-height: 60rpx;
+  font: 20px;
+  padding-right: 20rpx;
+  box-sizing: border-box
+  
+}
+#emag-row{
+  width: 100%;
+  height: 300rpx;
+}

@@ -1,0 +1,20 @@
+<dialog id="dialog" title="登录提示" content="小程序需要您的授权才能提供更好的服务哦" confirmText="知道了" bind:confirmEvent='confirmEvent' bind:bindGetUserInfo='bindGetUserInfo'></dialog>
+<searchbar bindsearchinput="onSearchInputEvent"></searchbar>
+
+<!-- <view class="history-list-group" wx:if="{{histories && !subjects}}">
+  <view class="history-title">
+    <view class="title">历史记录</view>
+    <view class="clear" bindtap="onClearEvent">清除</view>
+  </view>
+  <navigator class="history-group" wx:for="{{histories}}" wx:key="{{item.id]}" url="">{{item.title}}</navigator>
+</view> -->
+
+<view class="item-list-group">
+  <view class="item-group" wx:for="{{subjects}}" wx:key="{{item.id}}" bindtap="onItemTapEvent" data-kanid="{{item.id}}" data-thumlogo="{{item.thum_logo}}">
+    <image src="{{item.thum_logo}}" class="thumbnail" mode="widthFix"></image>
+    <view class="info-group">
+      <view class="sub-title">{{item.title}}</view>
+      <view class="sub-type-dy f25">{{item.typename}} {{item.buynum}} 订阅</view>
+    </view>
+  </view>
+</view>
